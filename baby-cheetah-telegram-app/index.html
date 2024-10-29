@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Cheetah Game</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Your original game will be loaded here -->
+    </div>
+
+    <script>
+        // Initialize Telegram Web App
+        const tg = window.Telegram.WebApp;
+        tg.expand();
+        tg.ready();
+
+        // Load your original game
+        window.onload = function() {
+            // Replace 'your-game-file.js' with the actual name of your main game JavaScript file
+            var script = document.createElement('script');
+            script.src = 'your-game-file.js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
